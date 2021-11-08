@@ -1,6 +1,6 @@
 {
-  "name": "@jobinjia/vue3-library",
-  "version": "0.0.13",
+  "name": "ant-design-vue-components",
+  "version": "0.0.1",
   "files": [
     "dist"
   ],
@@ -24,7 +24,8 @@
     "build:component": "yarn clean:lib && node scripts/build.js",
     "clean:lib": "rimraf dist",
     "lint:prettier": "prettier --write  \"(packages|docs)/**/*.{js,json,tsx,css,less,scss,vue,html,md,ts}\"",
-    "publish:component": "npm publish --access public"
+    "publish:component": "npm publish --access public",
+    "unpublish:component": "npm unpublish ant-design-vue-components --force"
   },
   "dependencies": {
     "@jiabinbin/vue3-library": "^0.0.13"
@@ -40,6 +41,7 @@
     "@vitejs/plugin-vue-jsx": "^1.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^9.0.1",
+    "@vueuse/core": "^6.8.0",
     "ant-design-vue": "^3.0.0-alpha.10",
     "eslint": "^8.2.0",
     "eslint-define-config": "^1.1.3",
@@ -47,6 +49,7 @@
     "eslint-plugin-vue": "^8.0.3",
     "fs-extra": "^10.0.0",
     "less": "^4.1.2",
+    "lodash-es": "^4.17.21",
     "moment": "^2.29.1",
     "pinia": "^2.0.2",
     "prettier": "^2.4.1",

@@ -4,8 +4,9 @@ import VCProvider from './Provider'
 import VCLoading from './Loading'
 import { App } from 'vue'
 import { VCBasicArrow } from './Basic'
+import VCBasicForm from './Form'
 
-const components = [VCIcon, VCSvgIcon, VCButton, VCProvider, VCLoading, VCBasicArrow]
+const components = [VCIcon, VCSvgIcon, VCButton, VCProvider, VCLoading, VCBasicArrow, VCBasicForm]
 
 function install(app: App) {
   components.forEach((com) => {
@@ -17,4 +18,4 @@ export default {
   install
 }
 
-export { install, VCIcon, VCSvgIcon, VCButton, VCProvider, VCLoading, VCBasicArrow }
+export { install, VCIcon, VCSvgIcon, VCButton, VCProvider, VCLoading, VCBasicArrow, VCBasicForm }

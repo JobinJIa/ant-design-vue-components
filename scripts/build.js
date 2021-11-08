@@ -46,11 +46,12 @@ const baseConfig = defineConfig({
 })
 
 const rollupOptions = {
-  external: ['vue', 'ant-design-vue'],
+  external: ['vue', 'ant-design-vue', 'moment'],
   output: {
     globals: {
       vue: 'Vue',
-      'ant-design-vue': 'antd'
+      'ant-design-vue': 'antDesignVue',
+      moment: 'Moment'
     },
     exports: 'named'
   },

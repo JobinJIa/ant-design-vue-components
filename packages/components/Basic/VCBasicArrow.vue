@@ -7,7 +7,7 @@
 </script>
 
 <script setup lang="ts">
-  import { VCIcon } from '@/components/Icon'
+  import { VCIcon as Icon } from '@/components/Icon'
   import { useDesign } from '@/composables/web/useDesign'
   import { computed } from 'vue'
 

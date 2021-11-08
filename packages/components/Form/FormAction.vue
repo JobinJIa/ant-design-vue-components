@@ -10,12 +10,12 @@
   import type { ColEx } from './types/index'
   //import type { ButtonProps } from 'ant-design-vue/es/button/buttonTypes';
   import { computed, PropType } from 'vue'
-  import { Form, Col as ACol } from 'ant-design-vue'
+  import { Form, Col as ACol, Space } from 'ant-design-vue'
   import { VCButton as Button, ButtonProps } from '@/components/Button'
   import { VCBasicArrow as BasicArrow } from '@/components/Basic'
   import { useFormContext } from './composables/useFormContext'
   // import { useI18n } from '/@/hooks/web/useI18n';
-  import { propTypes } from '@/utils/propTypes'
+  // import { propTypes } from '@/utils/propTypes'
 
   type ButtonOptions = Partial<ButtonProps> & { text?: string }
 
@@ -94,27 +94,27 @@
   <a-col v-bind="actionColOpt" v-if="showActionButtonGroup">
     <div style="width: 100%" :style="{ textAlign: actionColOpt.style.textAlign }">
       <FormItem>
-        <slot name="resetBefore"></slot>
-        <Button
-          type="default"
-          class="mr-2"
-          v-bind="getResetBtnOptions"
-          @click="resetAction"
-          v-if="showResetButton"
-        >
-          {{ getResetBtnOptions.text }}
-        </Button>
-        <slot name="submitBefore"></slot>
+        <Space>
+          <slot name="resetBefore"></slot>
+          <Button
+            type="default"
+            v-bind="getResetBtnOptions"
+            @click="resetAction"
+            v-if="showResetButton"
+          >
+            {{ getResetBtnOptions.text }}
+          </Button>
+          <slot name="submitBefore"></slot>
 
-        <Button
-          type="primary"
-          class="mr-2"
-          v-bind="getSubmitBtnOptions"
-          @click="submitAction"
-          v-if="showSubmitButton"
-        >
-          {{ getSubmitBtnOptions.text }}
-        </Button>
+          <Button
+            type="primary"
+            v-bind="getSubmitBtnOptions"
+            @click="submitAction"
+            v-if="showSubmitButton"
+          >
+            {{ getSubmitBtnOptions.text }}
+          </Button>
+        </Space>
 
         <slot name="advanceBefore"></slot>
         <Button
