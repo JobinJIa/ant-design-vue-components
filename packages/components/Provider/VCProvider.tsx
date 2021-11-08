@@ -1,5 +1,5 @@
-import {defineComponent, ref, toRefs} from "vue";
-import {createAppProviderContext} from "./composables/useAppContext";
+import { defineComponent, ref, toRefs } from 'vue'
+import { createAppProviderContext } from './composables/useAppContext'
 
 export type Theme = 'dark' | 'light'
 
@@ -15,12 +15,12 @@ export default defineComponent({
       default: 'light'
     }
   },
-  setup (props, { slots }) {
-    const isMobile = ref<boolean>(false);
-    const { prefixCls, theme } = toRefs(props);
+  setup(props, { slots }) {
+    const isMobile = ref<boolean>(false)
+    const { prefixCls, theme } = toRefs(props)
 
     // Inject variables into the global
-    createAppProviderContext({ prefixCls, isMobile, theme });
+    createAppProviderContext({ prefixCls, isMobile, theme })
     return () => slots?.default?.()
   }
 })

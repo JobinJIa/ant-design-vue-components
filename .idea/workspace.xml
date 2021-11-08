@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59ad5c11-0ac6-47b8-b690-311d4ee3c0e7" name="Changes" comment="">
+    <list default="true" id="e3e04e10-25f6-4c4c-96aa-2b1466451d16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Modal/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Table/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Basic/VCBasicArrow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Basic/VCBasicArrow.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Basic/VCBasicHelp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Basic/VCBasicHelp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Basic/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Basic/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Button/VCButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Button/VCButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Button/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Button/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Button/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Button/typing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Button/typing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Form/FormAction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/FormAction.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Form/composables/useFormContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/composables/useFormContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Form/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Form/types/composables.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/types/composables.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Form/types/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/types/form.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Form/types/formItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/types/formItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Form/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Icon/VCIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Icon/VCIcon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Icon/VCSvgIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Icon/VCSvgIcon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Icon/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Loading/VCLoading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Loading/VCLoading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Loading/composables/useLoading.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Loading/composables/useLoading.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Loading/createLoading.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Loading/createLoading.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Loading/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Loading/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Loading/typing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Loading/typing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Provider/VCProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Provider/VCProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Provider/composables/useAppContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Provider/composables/useAppContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Provider/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Provider/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Table/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Table/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Table/types/componentType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Table/types/componentType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Table/types/pagination.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Table/types/pagination.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/Table/types/table.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Table/types/table.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/composables/core/useContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/composables/core/useContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/composables/web/useDesign.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/composables/web/useDesign.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/enums/roleEnum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/enums/roleEnum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/enums/sizeEnum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/enums/sizeEnum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/types/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/types/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/types/utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/types/utils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/dateUtil.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/dateUtil.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/domUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/domUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/env.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/env.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/event/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/event/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/helper/treeHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/helper/treeHelper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/helper/tsxHelper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/helper/tsxHelper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/is.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/is.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/log.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/log.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/utils/propTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/utils/propTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,14 +71,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SetupVue3Ts" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="20ba3D2j1YPiCT2pzITuTwq2tr6" />
+  <component name="ProjectId" id="20d0onhfYkcX5nUur6kR0AzS1xv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,21 +88,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="pnpm" />
-    <property name="ts.external.directory.path" value="E:\myself\vue3-library\node_modules\typescript\lib" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.build:component">
-    <configuration name="build:component" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:component" />
-      </scripts>
-      <node-interpreter value="project" />
-      <package-manager value="npm" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.lint:prettier">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -52,26 +100,38 @@
         <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
-      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint:prettier" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:prettier" />
+      </scripts>
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build:component" />
+        <item itemvalue="npm.lint:prettier" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="59ad5c11-0ac6-47b8-b690-311d4ee3c0e7" name="Changes" comment="" />
-      <created>1636315544387</created>
+      <changelist id="e3e04e10-25f6-4c4c-96aa-2b1466451d16" name="Changes" comment="" />
+      <created>1636359335269</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1636315544387</updated>
-      <workItem from="1636315546360" duration="1810000" />
+      <updated>1636359335269</updated>
+      <workItem from="1636359340515" duration="1051000" />
     </task>
     <servers />
   </component>

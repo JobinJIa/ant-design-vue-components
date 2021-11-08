@@ -1,9 +1,8 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <a-space>
-    <VCButton color="success" >成功</VCButton>
+    <VCButton color="success">成功</VCButton>
     <VCButton color="error">失败</VCButton>
     <VCButton color="warning">警告</VCButton>
   </a-space>
@@ -20,6 +19,4 @@
   </a-space>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
