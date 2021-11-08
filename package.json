@@ -1,0 +1,54 @@
+{
+  "name": "@jiabinbin/vue3-library",
+  "version": "0.0.13",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./dist/index.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "build:component": "yarn clean:lib && node scripts/build.js",
+    "clean:lib": "rimraf dist",
+    "publish:component": "npm publish --access public"
+  },
+  "dependencies": {
+    "@jiabinbin/vue3-library": "^0.0.13"
+  },
+  "devDependencies": {
+    "@ant-design/icons-vue": "^6.0.1",
+    "@purge-icons/generated": "^0.7.0",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue-jsx": "^1.2.0",
+    "ant-design-vue": "^3.0.0-alpha.10",
+    "fs-extra": "^10.0.0",
+    "less": "^4.1.2",
+    "pinia": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vite-plugin-dts": "^0.9.3",
+    "vite-plugin-svg-icons": "^1.0.5",
+    "vue": "^3.2.16",
+    "vue-tsc": "^0.3.0"
+  },
+  "peerDependencies": {
+    "@vueuse/core": "^6.7.6",
+    "ant-design-vue": "^3.0.0-alpha.10",
+    "pinia": "^2.0.2",
+    "vue": "^3.2.16"
+  }
+}
