@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e04e10-25f6-4c4c-96aa-2b1466451d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/style/components/VCIcon/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vitepress/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/about/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/components/button.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/components/form.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/components/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Table/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/style/components/VCButton/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/FormAction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/FormAction.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/componentMap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/componentMap.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/composables/useComponentRegister.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/composables/useComponentRegister.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/helper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/types/hooks.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Table/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Table/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,7 @@
         <option value="TypeScript File" />
         <option value="Vue3TSSteupScript" />
         <option value="Less File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/composables/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/components" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,17 +61,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ant-design-vue-components\docs\components" />
       <recent name="$PROJECT_DIR$/packages/composables/core" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/packages/components/Modal/composables" />
       <recent name="$PROJECT_DIR$/packages/enums" />
-      <recent name="$PROJECT_DIR$/packages/composables/event" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.publish:component">
+  <component name="RunManager" selected="npm.docs:dev">
     <configuration name="build:component" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -81,6 +79,7 @@
         <script value="build:component" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="yarn" />
       <envs />
       <method v="2" />
     </configuration>
@@ -91,16 +90,18 @@
         <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="yarn" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="lint:prettier" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="docs:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="lint:prettier" />
+        <script value="docs:dev" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="yarn" />
       <envs />
       <method v="2" />
     </configuration>
@@ -111,6 +112,7 @@
         <script value="publish:component" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="yarn" />
       <envs />
       <method v="2" />
     </configuration>
@@ -121,16 +123,24 @@
         <script value="unpublish:component" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="yarn" />
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.build:component" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.publish:component" />
+      <item itemvalue="npm.unpublish:component" />
+      <item itemvalue="npm.docs:dev" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.publish:component" />
         <item itemvalue="npm.unpublish:component" />
         <item itemvalue="npm.build:component" />
-        <item itemvalue="npm.lint:prettier" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +157,7 @@
       <updated>1636359335269</updated>
       <workItem from="1636359340515" duration="1558000" />
       <workItem from="1636361235720" duration="7860000" />
+      <workItem from="1636459640814" duration="1885000" />
     </task>
     <servers />
   </component>
