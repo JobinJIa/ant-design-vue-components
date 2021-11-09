@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e04e10-25f6-4c4c-96aa-2b1466451d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vitepress/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/about/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/button.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/form.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,10 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.build:component" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.publish:component" />
         <item itemvalue="npm.unpublish:component" />
-        <item itemvalue="npm.build:component" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +151,8 @@
       <updated>1636359335269</updated>
       <workItem from="1636359340515" duration="1558000" />
       <workItem from="1636361235720" duration="7860000" />
-      <workItem from="1636459640814" duration="1885000" />
+      <workItem from="1636459640814" duration="1999000" />
+      <workItem from="1636463278256" duration="1454000" />
     </task>
     <servers />
   </component>
