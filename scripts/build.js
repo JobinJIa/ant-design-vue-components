@@ -46,36 +46,40 @@ const baseConfig = defineConfig({
 })
 
 const rollupOptions = {
-  external: ['vue', 'ant-design-vue', 'moment'],
+  external: ['vue', 'ant-design-vue', 'moment', 'lodash-es', '@ant-design/icons-vue'],
   output: {
     globals: {
       vue: 'Vue',
       'ant-design-vue': 'antDesignVue',
-      moment: 'Moment'
+      moment: 'Moment',
+      'lodash-es': '_',
+      '@ant-design/icons-vue': 'iconsVue'
     },
     exports: 'named'
   },
 }
 
-const getDtsConfig = (type, name) => {
+const getDtsConfig = (type, name, dirName) => {
   return {
     tsConfigFilePath: buildTsConfig,
     outputDir,
     staticImport: true,
-    insertTypesEntry: true,
+    insertTypesEntry: false,
     cleanVueFileName: true,
     logDiagnostics: true,
     copyDtsFiles: false,
     beforeWriteFile: (filePath, content) => {
+      const path = filePath.replace('/packages/components', `/components/${dirName}`)
       return {
-        filePath,
+        filePath: path,
         content,
       }
     }
   }
 }
 
-const getBuildConfig = (formant, name) => {
+const getBuildConfig = (format, name) => {
+  const dirName = format === 'umd'? 'lib': format
   const config = defineConfig({
     ...baseConfig,
     build: {
@@ -85,12 +89,12 @@ const getBuildConfig = (formant, name) => {
         entry: path.resolve(entryDir, name),
         name: 'index',
         fileName: () => 'index.js',
-        formats: [`${formant}`]
+        formats: [`${format}`]
       },
-      outDir: path.resolve(outputDir),
+      outDir: path.resolve(outputDir, `components/${dirName}/${name}`),
     }
   })
-  config.plugins.push(dts(getDtsConfig(formant, name)))
+  // config.plugins.push(dts(getDtsConfig(format, name, dirName)))
   return config
 }
 
@@ -112,24 +116,57 @@ const buildAll = async () => {
         fileName: 'index',
         formats: ['es']
       },
-      outDir: path.resolve(outputDir)
+      outDir: path.resolve(outputDir, 'components/es/')
     }
   })
+  esAll.plugins.push(dts({
+    tsConfigFilePath: buildTsConfig,
+    outputDir,
+    staticImport: true,
+    insertTypesEntry: false,
+    cleanVueFileName: true,
+    logDiagnostics: true,
+    copyDtsFiles: false,
+    beforeWriteFile: (filePath, content) => {
+      const path = filePath.replace('/packages/components', '/components/es')
+      return {
+        filePath: path,
+        content,
+      }
+    }
+  }))
   await build(esAll)
   const libAll = defineConfig({
     ...baseConfig,
     build: {
       rollupOptions,
       emptyOutDir: false,
+      cssCodeSplit: false,
       lib: {
         entry: path.resolve(entryDir, 'index.ts'),
         name,
         fileName: 'index',
         formats: ['umd']
       },
-      outDir: path.resolve(outputDir)
+      outDir: path.resolve(outputDir, 'components/lib/')
     }
   })
+  libAll.plugins.push(dts({
+    tsConfigFilePath: buildTsConfig,
+    outputDir,
+    staticImport: true,
+    insertTypesEntry: false,
+    cleanVueFileName: true,
+    logDiagnostics: true,
+    copyDtsFiles: false,
+    beforeWriteFile: (filePath, content) => {
+      const path = filePath.replace('/packages/components', '/components/lib')
+      return {
+        filePath: path,
+        content,
+      }
+    }
+  }))
   await build(libAll)
 }
 

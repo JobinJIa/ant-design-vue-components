@@ -3,7 +3,7 @@ import { useForm } from './composables/useForm'
 import { withInstall } from '@/utils'
 import { Plugin } from 'vue'
 
-export * from './types/index'
+export * from './types'
 export * from './types/form'
 export * from './types/formItem'
 export * from './types/composables'

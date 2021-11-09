@@ -7,7 +7,7 @@
 </script>
 
 <script setup lang="ts">
-  import type { ColEx } from './types/index'
+  import type { ColEx } from './types'
   //import type { ButtonProps } from 'ant-design-vue/es/button/buttonTypes';
   import { computed, PropType } from 'vue'
   import { Form, Col as ACol, Space } from 'ant-design-vue'
