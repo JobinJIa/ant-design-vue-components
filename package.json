@@ -29,7 +29,6 @@
     "unpublish:component": "npm unpublish ant-design-vue-components --force"
   },
   "dependencies": {
-    "@jiabinbin/vue3-library": "^0.0.13"
   },
   "devDependencies": {
     "@ant-design/icons-vue": "^6.0.1",

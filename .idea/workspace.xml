@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e04e10-25f6-4c4c-96aa-2b1466451d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/style/components/VCIcon/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Table/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/style/components/VCButton/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/FormAction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/FormAction.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/componentMap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/componentMap.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/composables/useComponentRegister.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/composables/useComponentRegister.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/helper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Form/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Form/types/hooks.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/Table/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/Table/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
