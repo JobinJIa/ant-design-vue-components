@@ -128,6 +128,7 @@ const buildAll = async () => {
     logDiagnostics: true,
     copyDtsFiles: false,
     beforeWriteFile: (filePath, content) => {
+      console.log(filePath);
       const path = filePath.replace('/packages/components', '/components/es')
       return {
         filePath: path,
