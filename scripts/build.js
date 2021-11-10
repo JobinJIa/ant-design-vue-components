@@ -64,24 +64,24 @@ const replacePath = (path, replaceStr) => {
   return path.replace(/packages[\\/]components+([\\/])/, replaceStr)
 }
 
-const getDtsConfig = (type, name, dirName) => {
-  return {
-    tsConfigFilePath: buildTsConfig,
-    outputDir,
-    staticImport: true,
-    insertTypesEntry: false,
-    cleanVueFileName: true,
-    logDiagnostics: true,
-    copyDtsFiles: false,
-    beforeWriteFile: (filePath, content) => {
-      const path = filePath.replace('/packages/components', `/components/${dirName}`)
-      return {
-        filePath: path,
-        content,
-      }
-    }
-  }
-}
+// const getDtsConfig = (type, name, dirName) => {
+//   return {
+//     tsConfigFilePath: buildTsConfig,
+//     outputDir,
+//     staticImport: true,
+//     insertTypesEntry: false,
+//     cleanVueFileName: true,
+//     logDiagnostics: true,
+//     copyDtsFiles: false,
+//     beforeWriteFile: (filePath, content) => {
+//       const path = filePath.replace('/packages/components', `/components/${dirName}`)
+//       return {
+//         filePath: path,
+//         content,
+//       }
+//     }
+//   }
+// }
 
 const getBuildConfig = (format, name) => {
   const dirName = format === 'umd'? 'lib': format
