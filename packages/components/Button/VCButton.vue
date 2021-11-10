@@ -1,10 +1,8 @@
 <script lang="ts">
-  import { defineComponent } from 'vue'
-
-  export default defineComponent({
+  export default {
     name: 'VCButton',
     inheritAttrs: false
-  })
+  }
 </script>
 
 <script setup lang="ts">

@@ -1,5 +1,6 @@
 import type { FunctionArgs } from '@vueuse/core'
 import { upperFirst } from 'lodash-es'
+import type { Fn } from '@/types/global'
 
 export interface ViewportOffsetResult {
   left: number
@@ -158,6 +159,7 @@ export function off(
 export function once(el: HTMLElement, event: string, fn: EventListener): void {
   const listener = function (this: any, ...args: unknown[]) {
     if (fn) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       fn.apply(this, args)
     }
@@ -168,11 +170,13 @@ export function once(el: HTMLElement, event: string, fn: EventListener): void {
 
 export function useRafThrottle<T extends FunctionArgs>(fn: T): T {
   let locked = false
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return function (...args: any[]) {
     if (locked) return
     locked = true
     window.requestAnimationFrame(() => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       fn.apply(this, args)
       locked = false

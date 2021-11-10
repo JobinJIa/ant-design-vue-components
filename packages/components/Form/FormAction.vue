@@ -8,10 +8,10 @@
 
 <script setup lang="ts">
   import type { ColEx } from './types'
-  //import type { ButtonProps } from 'ant-design-vue/es/button/buttonTypes';
+  import type { ButtonProps } from 'ant-design-vue/es/button/buttonTypes';
   import { computed } from 'vue'
   import { Form, Col as ACol, Space } from 'ant-design-vue'
-  import { VCButton as Button, ButtonProps } from '@/components/Button'
+  import { VCButton as Button } from '@/components/Button'
   import { VCBasicArrow as BasicArrow } from '@/components/Basic'
   import { useFormContext } from './composables/useFormContext'
   // import { useI18n } from '/@/hooks/web/useI18n';
@@ -45,7 +45,6 @@
       actionSpan: 6
     }
   )
-
   const emit = defineEmits<{
     (e: 'toggle-advanced'): void
   }>()

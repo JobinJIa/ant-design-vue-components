@@ -9,10 +9,10 @@ module.exports = {
     [
       'link',
       {
-        rel: 'icon',
+        rel: 'icon'
         // href: '/img/linktolink.png',//图片放在public文件夹下
-      },
-    ],
+      }
+    ]
   ],
   // 主题配置
   themeConfig: {
@@ -20,7 +20,7 @@ module.exports = {
     nav: [
       // { text: '首页', link: '/' },
       { text: 'Guide', link: '/', activeMatch: '^/$|^/components/' },
-      { text: '关于', link: '/about/' },
+      { text: '关于', link: '/about/' }
     ],
     //   侧边导航
     sidebar: {
@@ -37,13 +37,13 @@ function getGuideSidebar() {
       children: [
         { text: 'What is Vben Components?', link: '/' },
         { text: 'Getting Started', link: '/components/button' },
-        { text: 'Configuration', link: '/components/form' },
+        { text: 'Configuration', link: '/components/form' }
         // { text: 'Asset Handling', link: '/guide/assets' },
         // { text: 'Markdown Extensions', link: '/guide/markdown' },
         // { text: 'Using Vue in Markdown', link: '/guide/using-vue' },
         // { text: 'Deploying', link: '/guide/deploy' }
       ]
-    },
+    }
     // {
     //   text: 'Advanced',
     //   children: [

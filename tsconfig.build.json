@@ -15,7 +15,7 @@
     "noUnusedParameters": true,
     "experimentalDecorators": true,
     "types": ["vite/client"],
-    "typeRoots": ["./node_modules/@types/", "packages/types"],
+    "typeRoots": ["./node_modules/@types/"],
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
     "paths": {

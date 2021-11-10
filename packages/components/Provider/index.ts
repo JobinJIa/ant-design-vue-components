@@ -5,3 +5,5 @@ import { Plugin } from 'vue'
 const VCProvider = withInstall(vcProvider) as typeof vcProvider & Plugin
 
 export default VCProvider
+
+export { VCProvider }

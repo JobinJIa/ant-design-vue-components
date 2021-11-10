@@ -1,5 +1,7 @@
 import type { ComputedRef, Ref } from 'vue'
 import type { FormSchema, FormActionType, FormProps } from '../types/form'
+import type { Nullable } from "@/types/global";
+
 
 import { unref, nextTick, watchEffect } from 'vue'
 

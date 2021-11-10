@@ -1,12 +1,11 @@
 <script lang="ts">
-  import { defineComponent } from 'vue'
-
-  export default defineComponent({
+  export default {
     name: 'ApiTreeSelect'
-  })
+  }
 </script>
 
 <script setup lang="ts">
+  import type { Recordable, Nullable } from '@/types/global'
   import { computed, watch, ref, onMounted, unref, useAttrs } from 'vue'
   import { TreeSelect as ATreeSelect } from 'ant-design-vue'
   import { isArray, isFunction } from '@/utils/is'

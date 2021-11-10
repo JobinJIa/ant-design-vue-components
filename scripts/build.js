@@ -61,7 +61,8 @@ const rollupOptions = {
 }
 
 const replacePath = (path, replaceStr) => {
-  return path.replace(/packages[\\/]components+([\\/])/, replaceStr)
+  const removePackages = path.replace(/packages[\\/]/, '')
+  return removePackages
 }
 
 // const getDtsConfig = (type, name, dirName) => {
@@ -84,7 +85,7 @@ const replacePath = (path, replaceStr) => {
 // }
 
 const getBuildConfig = (format, name) => {
-  const dirName = format === 'umd'? 'lib': format
+  // const dirName = format === 'umd'? 'lib': format
   const config = defineConfig({
     ...baseConfig,
     build: {
@@ -93,10 +94,10 @@ const getBuildConfig = (format, name) => {
       lib: {
         entry: path.resolve(entryDir, name),
         name: 'index',
-        fileName: () => 'index.js',
+        fileName: (format) => `index.${format}.js`,
         formats: [`${format}`]
       },
-      outDir: path.resolve(outputDir, `components/${dirName}/${name}`),
+      outDir: path.resolve(outputDir, `components/${name}`),
     }
   })
   // config.plugins.push(dts(getDtsConfig(format, name, dirName)))
@@ -121,7 +122,7 @@ const buildAll = async () => {
         fileName: 'index',
         formats: ['es']
       },
-      outDir: path.resolve(outputDir, 'components/es/')
+      outDir: path.resolve(outputDir, 'components/')
     }
   })
   esAll.plugins.push(dts({
@@ -130,12 +131,12 @@ const buildAll = async () => {
     staticImport: true,
     insertTypesEntry: false,
     cleanVueFileName: true,
-    skipDiagnostics: false,
-    logDiagnostics: true,
+    // skipDiagnostics: false,
+    // logDiagnostics: true,
     copyDtsFiles: false,
     beforeWriteFile: (filePath, content) => {
-      // const path = filePath.replace('/packages/components', '/components/es')
-      const path = replacePath(filePath, 'components/es/')
+      const path = replacePath(filePath, 'components')
+      console.log(path)
       return {
         filePath: path,
         content,
@@ -155,7 +156,7 @@ const buildAll = async () => {
         fileName: 'index',
         formats: ['umd']
       },
-      outDir: path.resolve(outputDir, 'components/lib/')
+      outDir: path.resolve(outputDir, 'components/')
     }
   })
   libAll.plugins.push(dts({
@@ -167,9 +168,8 @@ const buildAll = async () => {
     logDiagnostics: true,
     copyDtsFiles: false,
     beforeWriteFile: (filePath, content) => {
-      console.log(filePath);
       // const path = filePath.replace('/packages/components', '/components/lib')
-      const path = replacePath(filePath, 'components/lib/')
+      const path = replacePath(filePath, 'components/')
       return {
         filePath: path,
         content,

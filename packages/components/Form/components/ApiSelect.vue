@@ -1,13 +1,12 @@
 <script lang="ts">
-  import { defineComponent } from 'vue'
-
-  export default defineComponent({
+  export default {
     name: 'ApiSelect',
     inheritAttrs: false
-  })
+  }
 </script>
 
 <script setup lang="ts">
+  import type { Recordable, Nullable } from '@/types/global'
   import { ref, watchEffect, computed, unref, watch } from 'vue'
   import { Select } from 'ant-design-vue'
   import { isFunction } from '@/utils/is'

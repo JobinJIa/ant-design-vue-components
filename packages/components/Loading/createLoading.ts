@@ -1,5 +1,6 @@
 import { VNode, defineComponent } from 'vue'
 import type { LoadingProps } from './typing'
+import type { Nullable } from '@/types/global'
 
 import { createVNode, render, reactive, h } from 'vue'
 import Loading from './VCLoading.vue'

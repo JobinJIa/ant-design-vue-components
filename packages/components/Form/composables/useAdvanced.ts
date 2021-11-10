@@ -6,6 +6,7 @@ import { computed, unref, watch } from 'vue'
 import { isBoolean, isFunction, isNumber, isObject } from '@/utils/is'
 import { useBreakpoint } from '@/composables/event/useBreakpoint'
 import { useDebounceFn } from '@vueuse/core'
+import type { EmitType, Recordable } from '@/types/global'
 
 const BASIC_COL_LEN = 24
 

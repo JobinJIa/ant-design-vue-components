@@ -1,22 +1,13 @@
 <script lang="ts">
-  import { defineComponent } from 'vue'
-
-  export default defineComponent({
+  export default {
     name: 'VCIcon'
-  })
+  }
 </script>
 
 <script setup lang="ts">
+  import type { ElRef } from '@/types/global'
   import SvgIcon from './VCSvgIcon.vue'
-  import {
-    ref,
-    watch,
-    onMounted,
-    nextTick,
-    unref,
-    computed,
-    CSSProperties
-  } from 'vue'
+  import { ref, watch, onMounted, nextTick, unref, computed, CSSProperties } from 'vue'
   import Iconify from '@purge-icons/generated'
   import { isString } from '@/utils/is'
 

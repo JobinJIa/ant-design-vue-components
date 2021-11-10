@@ -5,6 +5,7 @@ import type {
   ColumnProps,
   TableRowSelection as ITableRowSelection
 } from 'ant-design-vue/lib/table/interface'
+import type { Recordable, Fn, EmitType } from '@/types/global'
 
 import { ComponentType } from './componentType'
 import { VueNode } from '@/utils/propTypes'

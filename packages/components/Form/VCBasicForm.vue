@@ -19,6 +19,7 @@
   import type { CSSProperties, Ref } from 'vue'
 
   import type { RowProps } from 'ant-design-vue/lib/grid/Row'
+  import type { Recordable, Nullable, Fn } from '@/types/global'
   import { reactive, ref, computed, unref, onMounted, watch, nextTick, useAttrs } from 'vue'
   import FormItem from './FormItem'
   import FormAction from './FormAction.vue'
@@ -86,6 +87,7 @@
       autoSubmitOnEnter: true,
       size: 'default',
       emptySpan: () => 0,
+      showAdvancedButton: false,
       transformDateFunc: () => {
         return (date: any) => {
           return date._isAMomentObject ? date?.format('YYYY-MM-DD HH:mm:ss') : date
@@ -395,7 +397,7 @@
         }
 
         .ant-form-item-control {
-          margin-top: 4px;
+          //margin-top: 4px;
         }
 
         .suffix {

@@ -1,21 +1,17 @@
-import { VCIcon, VCSvgIcon } from './Icon'
-import VCButton from './Button'
-import VCProvider from './Provider'
-import VCLoading from './Loading'
-import { App } from 'vue'
-import { VCBasicArrow } from './Basic'
-import VCBasicForm from './Form'
+import type { App } from 'vue'
+import * as components from './components'
 
-const components = [VCIcon, VCSvgIcon, VCButton, VCProvider, VCLoading, VCBasicArrow, VCBasicForm]
+export * from './components'
 
 function install(app: App) {
-  components.forEach((com) => {
-    app.component(com.name, com)
+  Object.keys(components).forEach((key) => {
+    const component = components[key]
+    if (component.install) {
+      app.use(component)
+    }
   })
 }
 
 export default {
   install
 }
-
-export { install, VCIcon, VCSvgIcon, VCButton, VCProvider, VCLoading, VCBasicArrow, VCBasicForm }

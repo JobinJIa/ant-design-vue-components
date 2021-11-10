@@ -4,6 +4,7 @@ import type { ColEx } from './types'
 import type { TableActionType } from '@/components/Table'
 import type { ButtonProps } from 'ant-design-vue/es/button/buttonTypes'
 import type { RowProps } from 'ant-design-vue/lib/grid/Row'
+import type { Recordable, Fn } from '@/types/global'
 import { propTypes } from '@/utils/propTypes'
 
 export const basicProps = {

@@ -1,4 +1,4 @@
-import { defineComponent, ref, toRefs } from 'vue'
+import { defineComponent, ref, toRefs, PropType } from 'vue'
 import { createAppProviderContext } from './composables/useAppContext'
 
 export type Theme = 'dark' | 'light'

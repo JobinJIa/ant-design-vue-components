@@ -1,5 +1,6 @@
 import type { ValidationRule } from 'ant-design-vue/lib/form/Form'
 import type { ComponentType } from './types'
+import type { Recordable } from "@/types/global";
 // import { useI18n } from '/@/hooks/web/useI18n';
 import { dateUtil } from '@/utils/dateUtil'
 import { isNumber, isObject } from '@/utils/is'

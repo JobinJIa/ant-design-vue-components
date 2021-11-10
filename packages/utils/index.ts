@@ -1,4 +1,5 @@
 import { App, Plugin, unref } from 'vue'
+import type { Recordable } from '@/types/global'
 import { isObject } from '@/utils/is'
 
 export const withInstall = <T>(component: T, alias?: string) => {

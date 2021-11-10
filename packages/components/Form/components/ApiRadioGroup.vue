@@ -1,13 +1,12 @@
 <script lang="ts">
-  import { defineComponent } from 'vue'
-
-  export default defineComponent({
+  export default {
     name: 'ApiRadioGroup'
-  })
+  }
 </script>
 
 <script setup lang="ts">
   import { ref, watchEffect, computed, unref, watch } from 'vue'
+  import type { Recordable, Nullable } from '@/types/global'
   import { Radio } from 'ant-design-vue'
   import { isFunction } from '@/utils/is'
   import { useRuleFormItem } from '@/composables/component/useFormItem'

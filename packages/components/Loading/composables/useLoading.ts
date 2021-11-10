@@ -2,6 +2,8 @@ import { unref } from 'vue'
 import { createLoading } from '../createLoading'
 import type { LoadingProps } from '../typing'
 import type { Ref } from 'vue'
+import type { ElRef } from "@/types/global";
+
 
 export interface UseLoadingOptions {
   target?: any

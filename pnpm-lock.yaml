@@ -9,6 +9,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.3.0
   '@vitejs/plugin-vue': ^1.9.3
   '@vitejs/plugin-vue-jsx': ^1.2.0
+  '@vue/compiler-sfc': ^3.2.21
   '@vue/eslint-config-prettier': ^6.0.0
   '@vue/eslint-config-typescript': ^9.0.1
   '@vueuse/core': ^6.8.0
@@ -28,7 +29,7 @@ specifiers:
   rimraf: ^3.0.2
   typescript: ^4.4.3
   vite: ^2.6.4
-  vite-plugin-dts: ^0.9.3
+  vite-plugin-dts: ^0.9.4
   vite-plugin-svg-icons: ^1.0.5
   vitepress: ^0.20.1
   vue: ^3.2.16
@@ -43,10 +44,11 @@ devDependencies:
   '@typescript-eslint/parser': 5.3.0_eslint@8.2.0+typescript@4.4.4
   '@vitejs/plugin-vue': 1.9.4_vite@2.6.13
   '@vitejs/plugin-vue-jsx': 1.2.0
+  '@vue/compiler-sfc': 3.2.21
   '@vue/eslint-config-prettier': 6.0.0_5ef9ff6669b626527300390dc84546fb
   '@vue/eslint-config-typescript': 9.0.1_425cc51b30131039b01d6b8f87c1d756
   '@vueuse/core': 6.8.0_vue@3.2.21
-  ant-design-vue: 3.0.0-alpha.10_vue@3.2.21
+  ant-design-vue: 3.0.0-alpha.10_076477a87ad5f7673ec470dd8ffa7935
   eslint: 8.2.0
   eslint-define-config: 1.1.3
   eslint-plugin-prettier: 4.0.0_eslint@8.2.0+prettier@2.4.1
@@ -62,7 +64,7 @@ devDependencies:
   rimraf: 3.0.2
   typescript: 4.4.4
   vite: 2.6.13_less@4.1.2
-  vite-plugin-dts: 0.9.3_vite@2.6.13
+  vite-plugin-dts: 0.9.4_vite@2.6.13
   vite-plugin-svg-icons: 1.0.5_vite@2.6.13
   vitepress: 0.20.1_less@4.1.2
   vue: 3.2.21
@@ -1105,7 +1107,7 @@ packages:
       color-convert: 2.0.1
     dev: true
 
-  /ant-design-vue/3.0.0-alpha.10_vue@3.2.21:
+  /ant-design-vue/3.0.0-alpha.10_076477a87ad5f7673ec470dd8ffa7935:
     resolution: {integrity: sha512-t1ahn6detrzUlrsfnkZhMzIH+39lwSaaDyPMNJDfMcGspUPKykJ23O7HDapYzHroWyVU71f0Ut8MiRdVmVcX0A==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.1.0'
@@ -1115,6 +1117,7 @@ packages:
       '@ant-design/icons-vue': 6.0.1_vue@3.2.21
       '@babel/runtime': 7.16.0
       '@simonwep/pickr': 1.8.2
+      '@vue/compiler-sfc': 3.2.21
       array-tree-filter: 2.1.0
       async-validator: 4.0.7
       dayjs: 1.10.7
@@ -3721,8 +3724,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-plugin-dts/0.9.3_vite@2.6.13:
-    resolution: {integrity: sha512-pHYOy6B7+AnBLhZskyR91NKQRBCQJEJaoMdTFk2ZL2dkeLiMBlZzY+MvfFXMEaNmnNpiMZJpLTVyMEwst6huCg==}
+  /vite-plugin-dts/0.9.4_vite@2.6.13:
+    resolution: {integrity: sha512-eBzaCRvzQltIj712hrjYHoDgDYeTMWRg0zXtr0ZES1tPpHMTDLJaeHhCeNWp2OfCVcbQQV0qKHegBh//+v1Lig==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: '>=2.4.4'

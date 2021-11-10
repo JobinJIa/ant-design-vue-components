@@ -7,6 +7,7 @@
 </script>
 
 <script setup lang="ts">
+  import { Nullable, Recordable } from '@/types/global'
   import { ref, unref, watch, watchEffect } from 'vue'
   import { Cascader as ACascader } from 'ant-design-vue'
   // import { propTypes } from '@/utils/propTypes'
@@ -179,13 +180,13 @@
     :options="options"
     :load-data="loadData"
     change-on-select
+    :display-render="handleRenderDisplay"
     @change="handleChange"
-    :displayRender="handleRenderDisplay"
   >
-    <template #suffixIcon v-if="loading">
+    <template v-if="loading" #suffixIcon>
       <LoadingOutlined spin />
     </template>
-    <template #notFoundContent v-if="loading">
+    <template v-if="loading" #notFoundContent>
       <span>
         <LoadingOutlined spin class="mr-1" />
         <!--        {{ t('component.form.apiSelectNotFound') }}-->
