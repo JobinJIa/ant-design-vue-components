@@ -69,7 +69,11 @@
 
         if (index !== -1) {
           if (hasIndexSummary) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
             columns[index].customRender = ({ record }) => record[SUMMARY_INDEX_KEY]
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
             columns[index].ellipsis = false
           } else {
             Reflect.deleteProperty(columns[index], 'customRender')
@@ -77,6 +81,8 @@
         }
 
         if (table.getRowSelection() && hasRowSummary) {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           const isFixed = columns.some((col) => col.fixed === 'left')
           columns.unshift({
             width: 60,
@@ -84,6 +90,8 @@
             key: 'selectionKey',
             align: 'center',
             ...(isFixed ? { fixed: 'left' } : {}),
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
             customRender: ({ record }) => record[SUMMARY_ROW_KEY]
           })
         }

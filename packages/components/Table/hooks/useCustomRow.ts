@@ -44,12 +44,15 @@ export function useCustomRow(
           const keys = getSelectRowKeys()
           const key = getKey(record, rowKey, unref(getAutoCreateKey))
           if (!key) return
-
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           const isCheckbox = rowSelection.type === 'checkbox'
           if (isCheckbox) {
             // 找到tr
             const tr: HTMLElement = (e as MouseEvent)
               .composedPath?.()
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
               .find((dom: HTMLElement) => dom.tagName === 'TR') as HTMLElement
             if (!tr) return
             // 找到Checkbox，检查是否为disabled
@@ -64,7 +67,8 @@ export function useCustomRow(
             setSelectedRowKeys(keys)
             return
           }
-
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           const isRadio = rowSelection.type === 'radio'
           if (isRadio) {
             if (!keys.includes(key)) {
