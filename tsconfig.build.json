@@ -15,19 +15,18 @@
     "noUnusedParameters": true,
     "experimentalDecorators": true,
     "types": ["vite/client"],
+    "typeRoots": ["./node_modules/@types/", "packages/types"],
     "lib": ["esnext", "dom"],
-    "typeRoots": ["./node_modules/@types/", "./types"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["packages/*"]
     }
   },
   "include": [
-    "env.d.ts",
-    "packages/components/*.ts",
-    "packages/components/**/*.ts",
-    "packages/components/**/*.d.ts",
-    "packages/components/**/*.tsx",
-    "packages/components/**/*.vue",
+    "packages/**/*.ts",
+    "packages/**/*.ts",
+    "packages/**/*.d.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.vue",
   ]
 }

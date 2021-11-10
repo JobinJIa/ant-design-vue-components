@@ -9,7 +9,8 @@ const svgIconsPlugin = require('vite-plugin-svg-icons')
 
 const entryDir = path.resolve(__dirname, '../packages/components')
 const outputDir = path.resolve(__dirname, '../dist')
-const buildTsConfig = path.resolve(__dirname, '../tsconfig.build.json')
+// const buildTsConfig = path.resolve(__dirname, '../tsconfig.build.json')
+const buildTsConfig = path.resolve(__dirname, '../tsconfig.json')
 const rootPth = path.resolve(__dirname, '../')
 const alias = path.resolve(__dirname, '../packages/')
 
