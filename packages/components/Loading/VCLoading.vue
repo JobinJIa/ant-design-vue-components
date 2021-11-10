@@ -10,7 +10,7 @@
   import { Spin } from 'ant-design-vue'
   import { SizeEnum } from '@/enums/sizeEnum'
 
-  const props = withDefaults(
+  withDefaults(
     defineProps<{
       tip?: string
       size?: SizeEnum
@@ -23,7 +23,8 @@
       tip: '',
       size: SizeEnum.LARGE,
       absolute: false,
-      loading: false
+      loading: false,
+      theme: 'light'
     }
   )
 </script>

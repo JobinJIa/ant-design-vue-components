@@ -9,7 +9,7 @@
 <script setup lang="ts">
   import type { ColEx } from './types'
   //import type { ButtonProps } from 'ant-design-vue/es/button/buttonTypes';
-  import { computed, PropType } from 'vue'
+  import { computed } from 'vue'
   import { Form, Col as ACol, Space } from 'ant-design-vue'
   import { VCButton as Button, ButtonProps } from '@/components/Button'
   import { VCBasicArrow as BasicArrow } from '@/components/Basic'
@@ -87,7 +87,9 @@
     emit('toggle-advanced')
   }
 
-  const { resetAction, submitAction } = useFormContext()
+  const formContext = useFormContext()
+  const resetAction = formContext.resetAction
+  const submitAction = formContext.submitAction
 </script>
 
 <template>
@@ -132,5 +134,3 @@
     </div>
   </a-col>
 </template>
-
-<style scoped></style>

@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
   import type { CSSProperties } from 'vue'
-  import { defineComponent, computed } from 'vue'
+  import { computed } from 'vue'
 
   const { prefix, name, size, spin } = withDefaults(
     defineProps<{

@@ -15,12 +15,12 @@
     FormProps,
     FormSchema
   } from './types/form'
-  import type { AdvanceState } from './types/hooks'
+  import type { AdvanceState } from './types/composables'
   import type { CSSProperties, Ref } from 'vue'
 
   import type { RowProps } from 'ant-design-vue/lib/grid/Row'
   import { reactive, ref, computed, unref, onMounted, watch, nextTick, useAttrs } from 'vue'
-  import FormItem from './FormItem.tsx'
+  import FormItem from './FormItem'
   import FormAction from './FormAction.vue'
 
   import { dateItemType } from './helper'
@@ -102,11 +102,12 @@
   )
 
   const emit = defineEmits<{
-    (e: 'advanced-change'): void
+    (e: 'advanced-change', res: any): void
     (e: 'reset', formModel: any): void
     (e: 'submit', res: any): void
     (e: 'register', formActionType: Partial<FormActionType>): void
   }>()
+  // const emit = defineEmits(['advanced-change', 'reset', 'submit', 'register'])
 
   const attrs = useAttrs()
 
@@ -288,7 +289,7 @@
     }
   }
 
-  const formActionType: Partial<FormActionType> = {
+  const formActionType: FormActionType = {
     getFieldsValue,
     setFieldsValue,
     resetFields,
@@ -327,7 +328,7 @@
     formActionType: formActionType as any,
     setFormModel,
     getFormClass,
-    getFormActionBindProps: computed((): Recordable => ({ ...getProps.value, ...advanceState })),
+    getFormActionBindProps,
     ...formActionType
   })
 </script>

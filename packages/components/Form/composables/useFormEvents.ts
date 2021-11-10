@@ -10,7 +10,8 @@ import { cloneDeep, uniqBy } from 'lodash-es'
 import { error } from '@/utils/log'
 
 interface UseFormActionContext {
-  emit: EmitType
+  // TODO: remove any
+  emit: EmitType | any
   getProps: ComputedRef<FormProps>
   getSchema: ComputedRef<FormSchema[]>
   formModel: Recordable

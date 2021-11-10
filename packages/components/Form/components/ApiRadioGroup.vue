@@ -12,7 +12,7 @@
   import { isFunction } from '@/utils/is'
   import { useRuleFormItem } from '@/composables/component/useFormItem'
   import { useAttrs } from '@/composables/core/useAttrs'
-  import { propTypes } from '@/utils/propTypes'
+  // import { propTypes } from '@/utils/propTypes'
   import { get, omit } from 'lodash-es'
   // import { useI18n } from '/@/hooks/web/useI18n';
   type OptionsItem = { label: string; value: string | number | boolean; disabled?: boolean }

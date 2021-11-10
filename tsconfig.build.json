@@ -23,6 +23,7 @@
     }
   },
   "include": [
+    "env.d.ts",
     "packages/components/*.ts",
     "packages/components/**/*.ts",
     "packages/components/**/*.d.ts",

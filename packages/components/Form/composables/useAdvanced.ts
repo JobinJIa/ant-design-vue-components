@@ -1,5 +1,5 @@
 import type { ColEx } from '../types'
-import type { AdvanceState } from '../types/hooks'
+import type { AdvanceState } from '../types/composables'
 import type { ComputedRef, Ref } from 'vue'
 import type { FormProps, FormSchema } from '../types/form'
 import { computed, unref, watch } from 'vue'
@@ -11,7 +11,8 @@ const BASIC_COL_LEN = 24
 
 interface UseAdvancedContext {
   advanceState: AdvanceState
-  emit: EmitType
+  // TODO: remove any
+  emit: EmitType | any
   getProps: ComputedRef<FormProps>
   getSchema: ComputedRef<FormSchema[]>
   formModel: Recordable

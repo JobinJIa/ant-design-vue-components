@@ -59,6 +59,10 @@ const rollupOptions = {
   },
 }
 
+const replacePath = (path, replaceStr) => {
+  return path.replace(/packages[\\/]components+([\\/])/, replaceStr)
+}
+
 const getDtsConfig = (type, name, dirName) => {
   return {
     tsConfigFilePath: buildTsConfig,
@@ -125,11 +129,12 @@ const buildAll = async () => {
     staticImport: true,
     insertTypesEntry: false,
     cleanVueFileName: true,
+    skipDiagnostics: false,
     logDiagnostics: true,
     copyDtsFiles: false,
     beforeWriteFile: (filePath, content) => {
-      console.log(filePath);
-      const path = filePath.replace('/packages/components', '/components/es')
+      // const path = filePath.replace('/packages/components', '/components/es')
+      const path = replacePath(filePath, 'components/es/')
       return {
         filePath: path,
         content,
@@ -161,7 +166,9 @@ const buildAll = async () => {
     logDiagnostics: true,
     copyDtsFiles: false,
     beforeWriteFile: (filePath, content) => {
-      const path = filePath.replace('/packages/components', '/components/lib')
+      console.log(filePath);
+      // const path = filePath.replace('/packages/components', '/components/lib')
+      const path = replacePath(filePath, 'components/lib/')
       return {
         filePath: path,
         content,

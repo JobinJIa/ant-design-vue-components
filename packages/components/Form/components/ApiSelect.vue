@@ -8,7 +8,7 @@
 </script>
 
 <script setup lang="ts">
-  import { PropType, ref, watchEffect, computed, unref, watch } from 'vue'
+  import { ref, watchEffect, computed, unref, watch } from 'vue'
   import { Select } from 'ant-design-vue'
   import { isFunction } from '@/utils/is'
   import { useRuleFormItem } from '@/composables/component/useFormItem'
@@ -51,7 +51,8 @@
   const loading = ref(false)
   const isFirstLoad = ref(true)
   const emitData = ref<any[]>([])
-  const attrs = useAttrs()
+  // const attrs = useAttrs()
+  const $attrs = useAttrs()
 
   // Embedded in the form, just use the hook binding to perform form verification
   const [state] = useRuleFormItem(props, 'value', 'change', emitData)

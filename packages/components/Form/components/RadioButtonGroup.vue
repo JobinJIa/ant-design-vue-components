@@ -7,7 +7,7 @@
 </script>
 
 <script setup lang="ts">
-  import { PropType, computed } from 'vue'
+  import { computed } from 'vue'
   import { Radio } from 'ant-design-vue'
   import { isString } from '@/utils/is'
   import { useRuleFormItem } from '@/composables/component/useFormItem'

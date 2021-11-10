@@ -31,8 +31,6 @@
     "publish:component": "npm publish --access public",
     "unpublish:component": "npm unpublish ant-design-vue-components --force"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "@ant-design/icons-vue": "^6.0.1",
     "@nabla/vite-plugin-eslint": "^1.3.4",
@@ -51,11 +49,13 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "fs-extra": "^10.0.0",
+    "ky": "^0.28.7",
     "less": "^4.1.2",
     "lodash-es": "^4.17.21",
     "moment": "^2.29.1",
     "pinia": "^2.0.2",
     "prettier": "^2.4.1",
+    "resize-observer-polyfill": "^1.5.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
@@ -68,6 +68,7 @@
   "peerDependencies": {
     "@vueuse/core": "^6.7.6",
     "ant-design-vue": "^3.0.0-alpha.10",
+    "ky": "^0.28.7",
     "moment": "^2.29.1",
     "pinia": "^2.0.2",
     "vue": "^3.2.16"

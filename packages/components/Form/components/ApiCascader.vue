@@ -7,9 +7,9 @@
 </script>
 
 <script setup lang="ts">
-  import { PropType, ref, unref, watch, watchEffect } from 'vue'
+  import { ref, unref, watch, watchEffect } from 'vue'
   import { Cascader as ACascader } from 'ant-design-vue'
-  import { propTypes } from '@/utils/propTypes'
+  // import { propTypes } from '@/utils/propTypes'
   import { isFunction } from '@/utils/is'
   import { get, omit } from 'lodash-es'
   import { useRuleFormItem } from '@/composables/component/useFormItem'

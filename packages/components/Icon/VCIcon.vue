@@ -9,7 +9,6 @@
 <script setup lang="ts">
   import SvgIcon from './VCSvgIcon.vue'
   import {
-    defineComponent,
     ref,
     watch,
     onMounted,
