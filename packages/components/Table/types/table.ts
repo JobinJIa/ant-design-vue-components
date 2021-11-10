@@ -4,7 +4,8 @@ import type { FormProps } from '@/components/Form'
 import type {
   ColumnProps,
   TableRowSelection as ITableRowSelection
-} from 'ant-design-vue/lib/table/interface'
+} from 'ant-design-vue/es/table/interface'
+// import type { ColumnProps } from 'ant-design-vue/lib/table'
 import type { Recordable, Fn, EmitType } from '@/types/global'
 
 import { ComponentType } from './componentType'
@@ -28,6 +29,7 @@ export interface TableRowSelection<T = any> extends ITableRowSelection {
    * Callback executed when select/deselect one row
    * @type Function
    */
+  // eslint-disable-next-line @typescript-eslint/ban-types
   onSelect?: (record: T, selected: boolean, selectedRows: Object[], nativeEvent: Event) => any
 
   /**
@@ -256,6 +258,9 @@ export interface BasicTableProps<T = any> {
    * Customize row expand Icon.
    * @type Function | VNodeChild
    */
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-types
   expandIcon?: Function | VNodeChild | JSX.Element
 
   /**
@@ -274,6 +279,7 @@ export interface BasicTableProps<T = any> {
    * Table footer renderer
    * @type Function | VNodeChild
    */
+  // eslint-disable-next-line @typescript-eslint/ban-types
   footer?: Function | VNodeChild | JSX.Element
 
   /**
@@ -410,6 +416,7 @@ export type CellFormat =
   | ((text: string, record: Recordable, index: number) => string | number)
   | Map<string | number, any>
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 export interface BasicColumn extends ColumnProps {
   children?: BasicColumn[]

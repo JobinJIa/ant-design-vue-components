@@ -1,3 +1,11 @@
+import type {
+  ComponentRenderProxy,
+  VNode,
+  VNodeChild,
+  ComponentPublicInstance,
+  FunctionalComponent,
+  PropType as VuePropType
+} from 'vue'
 export interface Fn<T = any, R = T> {
   (...arg: T[]): R
 }
@@ -33,3 +41,14 @@ export type DynamicProps<T> = {
 export type Recordable<T = any> = Record<string, T>
 
 export type Nullable<T> = T | null
+
+export interface ChangeEvent extends Event {
+  target: HTMLInputElement
+}
+
+export type TimeoutHandle = ReturnType<typeof setTimeout>
+export type IntervalHandle = ReturnType<typeof setInterval>
+
+// vue
+export type PropType<T> = VuePropType<T>
+export type VueNode = VNodeChild | JSX.Element

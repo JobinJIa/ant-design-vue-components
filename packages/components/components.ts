@@ -1,4 +1,4 @@
-export { VCBasicArrow, VCBasicHelp } from './Basic'
+export { VCBasicArrow, VCBasicHelp, VCBasicTitle } from './Basic'
 
 export { VCButton } from './Button'
 
